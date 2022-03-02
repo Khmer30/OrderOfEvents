@@ -15,8 +15,22 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70a-dL-5Hl">
+                                <rect key="frame" x="123" y="432.5" width="168.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show me the life cycle"/>
+                                <connections>
+                                    <segue destination="oCh-R1-Ph6" kind="show" id="SGn-ge-uiL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="70a-dL-5Hl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GlM-c8-vAX"/>
+                            <constraint firstItem="70a-dL-5Hl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ok3-Jn-dL0"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VyZ-Wl-PzD"/>
                 </viewController>
@@ -31,9 +45,33 @@
                     <view key="view" contentMode="scaleToFill" id="Mmm-z7-bvn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JE7-3H-Zs1">
+                                <rect key="frame" x="173.5" y="378.5" width="67" height="139"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="n4k-L1-wHo" kind="show" id="6Na-NC-beb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing has happend yet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7t-DK-JSC">
+                                <rect key="frame" x="112" y="338" width="191.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="AYE-Pb-rLu"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="JE7-3H-Zs1" firstAttribute="centerY" secondItem="Mmm-z7-bvn" secondAttribute="centerY" id="1nB-LZ-wPU"/>
+                            <constraint firstItem="K7t-DK-JSC" firstAttribute="top" secondItem="AYE-Pb-rLu" secondAttribute="top" constant="250" id="6LF-mz-bX9"/>
+                            <constraint firstItem="JE7-3H-Zs1" firstAttribute="top" secondItem="K7t-DK-JSC" secondAttribute="bottom" constant="20" id="F04-VE-zsC"/>
+                            <constraint firstItem="K7t-DK-JSC" firstAttribute="leading" secondItem="AYE-Pb-rLu" secondAttribute="leading" constant="112" id="j9o-xk-970"/>
+                            <constraint firstItem="JE7-3H-Zs1" firstAttribute="centerX" secondItem="Mmm-z7-bvn" secondAttribute="centerX" id="wU2-AF-bkt"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="01d-oh-cz5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FMJ-7Y-bhX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,9 +84,22 @@
                     <view key="view" contentMode="scaleToFill" id="vu3-Eb-bIr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go back and see if anything happend." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ha0-D6-QBy">
+                                <rect key="frame" x="63.5" y="437.5" width="287" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="fkM-xy-R5L"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="Ha0-D6-QBy" firstAttribute="centerY" secondItem="vu3-Eb-bIr" secondAttribute="centerY" id="liw-ra-K4I"/>
+                            <constraint firstItem="Ha0-D6-QBy" firstAttribute="centerX" secondItem="vu3-Eb-bIr" secondAttribute="centerX" id="tVM-au-Xs6"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="efJ-rD-Jce"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HeS-wy-f4g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
