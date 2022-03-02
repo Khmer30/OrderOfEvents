@@ -55,7 +55,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing has happend yet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7t-DK-JSC">
-                                <rect key="frame" x="112" y="338" width="191.5" height="20.5"/>
+                                <rect key="frame" x="20" y="338" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -67,11 +67,15 @@
                             <constraint firstItem="JE7-3H-Zs1" firstAttribute="centerY" secondItem="Mmm-z7-bvn" secondAttribute="centerY" id="1nB-LZ-wPU"/>
                             <constraint firstItem="K7t-DK-JSC" firstAttribute="top" secondItem="AYE-Pb-rLu" secondAttribute="top" constant="250" id="6LF-mz-bX9"/>
                             <constraint firstItem="JE7-3H-Zs1" firstAttribute="top" secondItem="K7t-DK-JSC" secondAttribute="bottom" constant="20" id="F04-VE-zsC"/>
-                            <constraint firstItem="K7t-DK-JSC" firstAttribute="leading" secondItem="AYE-Pb-rLu" secondAttribute="leading" constant="112" id="j9o-xk-970"/>
+                            <constraint firstItem="AYE-Pb-rLu" firstAttribute="trailing" secondItem="K7t-DK-JSC" secondAttribute="trailing" constant="20" id="ThQ-W5-uVq"/>
+                            <constraint firstItem="K7t-DK-JSC" firstAttribute="leading" secondItem="AYE-Pb-rLu" secondAttribute="leading" constant="20" id="j9o-xk-970"/>
                             <constraint firstItem="JE7-3H-Zs1" firstAttribute="centerX" secondItem="Mmm-z7-bvn" secondAttribute="centerX" id="wU2-AF-bkt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="01d-oh-cz5"/>
+                    <connections>
+                        <outlet property="label" destination="K7t-DK-JSC" id="e1E-8z-Hb6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FMJ-7Y-bhX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
